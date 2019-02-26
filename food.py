@@ -30,6 +30,7 @@ class FoodConfig(Config):
     """Configuration for training on the toy  dataset.
     """
     # Training 2 images per GPU as the image size is quite large
+    NAME='food'
     GPU_COUNT = 1
     IMAGES_PER_GPU = 2
 
