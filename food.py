@@ -33,7 +33,7 @@ def get_calorie(class_name,real_food_area):
     if class_name in calorie_per_unit:
         return calorie_per_unit[class_name]
     else:
-        return calorie_per_sq_inch[class_name]
+        return calorie_per_sq_inch[class_name]*real_food_area
 
 ##Configurations
 class FoodConfig(Config):
